@@ -777,8 +777,8 @@ require('lazy').setup({
           --    https://github.com/L3MON4D3/LuaSnip?tab=readme-ov-file#keymaps
         },
         sources = {
-          { name = 'cody' },
           { name = 'nvim_lsp' },
+          { name = 'cody' },
           { name = 'luasnip' },
           { name = 'path' },
         },
