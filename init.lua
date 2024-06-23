@@ -195,7 +195,7 @@ vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower win
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
 -- windows
-vim.kemap.set('n', '<leader>ww', '<C-W>p', { desc = 'Other Window', remap = true })
+vim.keymap.set('n', '<leader>ww', '<C-W>p', { desc = 'Other Window', remap = true })
 vim.keymap.set('n', '<leader>wd', '<C-W>c', { desc = 'Delete Window', remap = true })
 vim.keymap.set('n', '<leader>w-', '<C-W>s', { desc = 'Split Window Below', remap = true })
 vim.keymap.set('n', '<leader>w|', '<C-W>v', { desc = 'Split Window Right', remap = true })
@@ -261,11 +261,11 @@ require('lazy').setup({
     'lewis6991/gitsigns.nvim',
     opts = {
       signs = {
-        add = { text = '+' },
-        change = { text = '~' },
-        delete = { text = '_' },
-        topdelete = { text = '‾' },
-        changedelete = { text = '~' },
+        add = { text = '' },
+        change = { text = '' },
+        delete = { text = '' },
+        topdelete = { text = '' },
+        changedelete = { text = '' },
       },
     },
   },
