@@ -777,6 +777,7 @@ require('lazy').setup({
           --    https://github.com/L3MON4D3/LuaSnip?tab=readme-ov-file#keymaps
         },
         sources = {
+          { name = 'cody' },
           { name = 'nvim_lsp' },
           { name = 'luasnip' },
           { name = 'path' },
@@ -927,6 +928,19 @@ require('lazy').setup({
         '<cmd>Trouble qflist toggle<cr>',
         desc = 'Quickfix List (Trouble)',
       },
+    },
+  },
+  {
+    {
+      'sourcegraph/sg.nvim',
+      dependencies = {
+        'nvim-lua/plenary.nvim', --[[ "nvim-telescope/telescope.nvim ]]
+      },
+      config = function(_, opts)
+        require('sg').setup(opts)
+      end,
+      -- If you have a recent version of lazy.nvim, you don't need to add this!
+      build = 'nvim -l build/init.lua',
     },
   },
 
