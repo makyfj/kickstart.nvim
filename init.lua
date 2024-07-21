@@ -787,8 +787,8 @@ require('lazy').setup({
         },
         sources = {
           { name = 'nvim_lsp' },
-          { name = 'luasnip' },
           { name = 'cody' },
+          { name = 'luasnip' },
           { name = 'path' },
         },
       }
