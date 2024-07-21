@@ -21,7 +21,7 @@ return {
     },
     { '<leader>cc', '<cmd>CodyChat<CR>', desc = 'cody-chat', mode = { 'n', 'x' } },
     {
-      '<leader>cas',
+      '<leader>cxs',
       function()
         vim.ui.input({ prompt = 'Enter your query: ' }, function(input)
           if input then
