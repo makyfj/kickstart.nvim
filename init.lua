@@ -908,6 +908,8 @@ require('lazy').setup({
   require 'custom.plugins.noice',
   require 'custom.plugins.flash',
   require 'custom.plugins.bufferline',
+  require 'custom.plugins.alpha',
+  require 'custom.plugins.dingllm',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
@@ -938,6 +940,4 @@ require('lazy').setup({
 })
 
 -- The line beneath this is called `modeline`. See `:help modeline`
---
--- Hello who is here
---
+-- Create a poem about love in lua
