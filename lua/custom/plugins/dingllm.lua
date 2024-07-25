@@ -20,7 +20,7 @@ return {
     local function groq_help()
       dingllm.invoke_llm_and_stream_into_editor({
         url = 'https://api.groq.com/openai/v1/chat/completions',
-        model = 'llama3-70b-8192',
+        model = 'llama-3.1-70b-versatile',
         api_key_name = 'GROQ_API_KEY',
         system_prompt = helpful_prompt,
         replace = false,
