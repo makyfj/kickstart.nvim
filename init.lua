@@ -421,6 +421,9 @@ require('lazy').setup({
         }
       end, { desc = '[S]earch [/] in Open Files' })
 
+      -- Add lazygit to invoke the plugin in telescope
+      vim.keymap.set('n', '<leader>sl', '<cmd>lua require("telescope").extensions.lazygit.lazygit()<CR>', { desc = '[L]azy [G]it' })
+
       -- Shortcut for searching your Neovim configuration files
       vim.keymap.set('n', '<leader>sn', function()
         builtin.find_files { cwd = vim.fn.stdpath 'config' }
