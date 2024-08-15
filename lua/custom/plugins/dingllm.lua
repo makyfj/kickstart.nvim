@@ -129,14 +129,14 @@ return {
       }, dingllm.make_anthropic_spec_curl_args, dingllm.handle_anthropic_spec_data)
     end
 
-    vim.keymap.set({ 'n', 'v' }, '<leader>lk', groq_replace, { desc = 'llm groq' })
-    vim.keymap.set({ 'n', 'v' }, '<leader>lK', groq_help, { desc = 'llm groq_help' })
-    vim.keymap.set({ 'n', 'v' }, '<leader>lL', openai_help, { desc = 'llm openai_help' })
-    vim.keymap.set({ 'n', 'v' }, '<leader>ll', openai_replace, { desc = 'llm openai' })
-    vim.keymap.set({ 'n', 'v' }, '<leader>lI', anthropic_help, { desc = 'llm anthropic_help' })
-    vim.keymap.set({ 'n', 'v' }, '<leader>li', anthropic_replace, { desc = 'llm anthropic' })
-    vim.keymap.set({ 'n', 'v' }, '<leader>lo', ollama_replace, { desc = 'llm ollama' })
-    vim.keymap.set({ 'n', 'v' }, '<leader>lO', ollama_help, { desc = 'llm ollama_help' })
+    vim.keymap.set({ 'n', 'v' }, '<leader>lg', groq_replace, { desc = 'llm groq' })
+    vim.keymap.set({ 'n', 'v' }, '<leader>lG', groq_help, { desc = 'llm groq_help' })
+    vim.keymap.set({ 'n', 'v' }, '<leader>lo', openai_replace, { desc = 'llm openai' })
+    vim.keymap.set({ 'n', 'v' }, '<leader>lO', openai_help, { desc = 'llm openai_help' })
+    vim.keymap.set({ 'n', 'v' }, '<leader>la', anthropic_replace, { desc = 'llm anthropic' })
+    vim.keymap.set({ 'n', 'v' }, '<leader>lA', anthropic_help, { desc = 'llm anthropic_help' })
+    vim.keymap.set({ 'n', 'v' }, '<leader>ll', ollama_replace, { desc = 'llm ollama' })
+    vim.keymap.set({ 'n', 'v' }, '<leader>lL', ollama_help, { desc = 'llm ollama_help' })
     -- vim.keymap.set({ 'n', 'v' }, '<leader>o', llama_405b_base, { desc = 'llama base' })
   end,
 }
