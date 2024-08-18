@@ -4,7 +4,7 @@ return {
   opts = {
     provider = 'claude',
     windows = {
-      width = 60,
+      width = 40,
     },
   },
   build = 'make',
