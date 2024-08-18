@@ -2,7 +2,7 @@ return {
   'yetone/avante.nvim',
   event = 'VeryLazy',
   opts = {
-    provider = 'claude',
+    provider = 'groq', -- "claude" or "openai" or "azure" or "deepseek" or "groq"
     windows = {
       width = 40,
     },
