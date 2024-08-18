@@ -89,26 +89,6 @@ return {
       }, dingllm.make_openai_spec_curl_args, dingllm.handle_openai_spec_data)
     end
 
-    local function openai_replace()
-      dingllm.invoke_llm_and_stream_into_editor({
-        url = 'https://api.openai.com/v1/chat/completions',
-        model = 'gpt-4o',
-        api_key_name = 'OPENAI_API_KEY',
-        system_prompt = system_prompt,
-        replace = true,
-      }, dingllm.make_openai_spec_curl_args, dingllm.handle_openai_spec_data)
-    end
-
-    local function openai_help()
-      dingllm.invoke_llm_and_stream_into_editor({
-        url = 'https://api.openai.com/v1/chat/completions',
-        model = 'gpt-4o',
-        api_key_name = 'OPENAI_API_KEY',
-        system_prompt = helpful_prompt,
-        replace = false,
-      }, dingllm.make_openai_spec_curl_args, dingllm.handle_openai_spec_data)
-    end
-
     local function anthropic_help()
       dingllm.invoke_llm_and_stream_into_editor({
         url = 'https://api.anthropic.com/v1/messages',
@@ -131,8 +111,6 @@ return {
 
     vim.keymap.set({ 'n', 'v' }, '<leader>lg', groq_replace, { desc = 'llm groq' })
     vim.keymap.set({ 'n', 'v' }, '<leader>lG', groq_help, { desc = 'llm groq_help' })
-    vim.keymap.set({ 'n', 'v' }, '<leader>lo', openai_replace, { desc = 'llm openai' })
-    vim.keymap.set({ 'n', 'v' }, '<leader>lO', openai_help, { desc = 'llm openai_help' })
     vim.keymap.set({ 'n', 'v' }, '<leader>la', anthropic_replace, { desc = 'llm anthropic' })
     vim.keymap.set({ 'n', 'v' }, '<leader>lA', anthropic_help, { desc = 'llm anthropic_help' })
     vim.keymap.set({ 'n', 'v' }, '<leader>ll', ollama_replace, { desc = 'llm ollama' })
