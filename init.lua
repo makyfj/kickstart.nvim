@@ -869,6 +869,7 @@ require('lazy').setup({
   require 'custom.plugins.tokyonight',
   require 'custom.plugins.kznllm',
   require 'custom.plugins.render-markdown',
+  require 'custom.plugins.avante',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
