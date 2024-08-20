@@ -51,6 +51,7 @@ return {
       button('e', '  New file', ':ene <BAR> startinsert <CR>'),
       button('r', '  Recently used files', ':Telescope oldfiles <CR>'),
       button('t', '  Find text', ':Telescope live_grep <CR>'),
+      button('l', '  Lazy', ':Lazy<CR>'), -- New Lazy button
       button('c', '  Configuration', ':e $MYVIMRC <CR>'),
       button('q', '  Quit Neovim', ':qa<CR>'),
     }
