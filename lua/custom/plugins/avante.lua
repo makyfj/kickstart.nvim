@@ -2,7 +2,7 @@ return {
   'yetone/avante.nvim',
   event = 'VeryLazy',
   opts = {
-    provider = 'groq',
+    provider = 'claude',
     windows = {
       width = 40,
     },

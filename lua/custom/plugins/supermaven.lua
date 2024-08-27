@@ -5,7 +5,7 @@ return {
       keymaps = {
         accept_suggestion = '<C-y>',
       },
-      ignore_filetypes = { env = true },
+      ignore_filetypes = { env = true, zshrc = true },
     }
   end,
 }
