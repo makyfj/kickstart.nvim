@@ -102,6 +102,7 @@ return { -- Autocompletion
       },
       sources = {
         { name = 'nvim_lsp' },
+        { name = 'supermaven' },
         { name = 'luasnip' },
         { name = 'path' },
       },

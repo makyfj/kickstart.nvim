@@ -2,22 +2,19 @@ return {
   'yetone/avante.nvim',
   event = 'VeryLazy',
   opts = {
-    provider = 'groq', -- "claude" or "openai" or "azure" or "deepseek" or "groq"
+    provider = 'claude',
     windows = {
       width = 40,
     },
   },
   build = 'make',
   dependencies = {
-    'nvim-tree/nvim-web-devicons',
-    {
-      'grapp-dev/nui-components.nvim',
-      dependencies = {
-        'MunifTanjim/nui.nvim',
-      },
-    },
+    'nvim-tree/nvim-web-devicons', -- or echasnovski/mini.icons
+    'stevearc/dressing.nvim',
     'nvim-lua/plenary.nvim',
-    { -- Optional
+    'MunifTanjim/nui.nvim',
+    --- The below is optional, make sure to setup it properly if you have lazy=true
+    {
       'MeanderingProgrammer/render-markdown.nvim',
       opts = {
         file_types = { 'markdown', 'Avante' },
