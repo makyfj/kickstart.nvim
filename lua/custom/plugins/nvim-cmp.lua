@@ -27,7 +27,7 @@ return { -- Autocompletion
       },
     },
     'saadparwaiz1/cmp_luasnip',
-
+    'onsails/lspkind.nvim',
     -- Adds other completion capabilities.
     --  nvim-cmp does not ship with all sources by default. They are split
     --  into multiple repos for maintenance purposes.
@@ -38,6 +38,7 @@ return { -- Autocompletion
     -- See `:help cmp`
     local cmp = require 'cmp'
     local luasnip = require 'luasnip'
+    local lspkind = require 'lspkind'
     luasnip.config.setup {}
 
     cmp.setup {
@@ -105,6 +106,13 @@ return { -- Autocompletion
         { name = 'supermaven' },
         { name = 'luasnip' },
         { name = 'path' },
+      },
+      formatting = {
+        format = lspkind.cmp_format {
+          mode = 'symbol_text',
+          maxwidth = 50,
+          ellipsis_char = '...',
+        },
       },
     }
   end,
